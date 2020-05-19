@@ -1,0 +1,23 @@
+
+.Member {
+    padding: 3rem;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    margin-top: 3rem;
+}
+
+.MemberList {
+    margin-top: 6rem;
+}
+
+.Member table {
+    width: 100%;
+}
+
+th {
+    text-align: left;
+}
+
+.controls a {
+    margin-left: 1rem;
+}
