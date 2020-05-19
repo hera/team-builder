@@ -1,0 +1,49 @@
+.MemberForm {
+    display: block;
+}
+
+.MemberForm label {
+    display: block;
+    margin-bottom: 4rem;
+    display: block;
+}
+
+.MemberForm input, .MemberForm select, button {
+
+    border: 1px solid #ddd;
+    line-height: 6rem;
+    padding: 0 2rem;
+    border-radius: 0.5rem;
+    display: block;
+    margin: 1rem 0 0 0;
+    outline: none;
+    font-size: 1.6rem;
+}
+
+.MemberForm input {
+    width: 100%;
+}
+
+.MemberForm select {
+    min-width: 30rem;
+    height: 6rem;
+    text-indent: 2rem;
+}
+
+.MemberForm button {
+    border: none;
+    background-color: purple;
+    cursor: pointer;
+    color: white;
+    min-width: 30rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.MemberForm input:focus, .MemberForm select:focus {
+    border: 1px solid purple;
+}
+
+.MemberForm select {
+    cursor: pointer;
+}
