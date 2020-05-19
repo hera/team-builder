@@ -1,5 +1,6 @@
 .MemberForm {
     display: block;
+    margin-top: 6rem;
 }
 
 .MemberForm label {
@@ -12,22 +13,17 @@
 
     border: 1px solid #ddd;
     line-height: 6rem;
-    padding: 0 2rem;
     border-radius: 0.5rem;
     display: block;
     margin: 1rem 0 0 0;
     outline: none;
     font-size: 1.6rem;
-}
-
-.MemberForm input {
     width: 100%;
+    text-indent: 2rem;
 }
 
 .MemberForm select {
-    min-width: 30rem;
     height: 6rem;
-    text-indent: 2rem;
 }
 
 .MemberForm button {

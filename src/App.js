@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
@@ -11,6 +11,9 @@ function App() {
         <div className="App">
             <h1>Team Members</h1>
             <MemberForm />
+            <div className="MemberList">
+                <Member />
+            </div>
         </div>
         
     );
