@@ -7,12 +7,42 @@ import MemberForm from "./Components/MemberForm";
 
 
 function App() {
+    const defaultMemberData = {
+        name: '',
+        email: '',
+        role: 'developer'
+    };
+
+    let [memberList, setMemberList] = useState([]);
+    let [currentMember, setCurrentMember] = useState(defaultMemberData);
+
+
+    function handleChange (event) {
+        setCurrentMember({...currentMember, [event.target.name]: event.target.value});
+    }
+
+    function handleSubmit (event) {
+        event.preventDefault();
+        addMember();
+    }
+
+    function addMember () {
+        if (currentMember.name && currentMember.email && currentMember.role) {
+            setMemberList([...memberList, currentMember]);
+            clearCurrentMember();
+        }
+    }
+
+    function clearCurrentMember () {
+        setCurrentMember(defaultMemberData);
+    }
+
     return (
         <div className="App">
             <h1>Team Members</h1>
-            <MemberForm />
+            <MemberForm handleChange={handleChange} handleSubmit={handleSubmit} currentMember={currentMember} />
             <div className="MemberList">
-                <Member />
+                { memberList.map((member, index) => <Member member={member} key={index} />) }
             </div>
         </div>
         

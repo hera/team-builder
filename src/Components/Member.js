@@ -2,9 +2,10 @@ import React from 'react';
 import './Member.css';
 
 function Member(props) {
+    let member = props.member;
     return (
         <div className="Member">
-            <h2>Lana Del Ray</h2>
+            <h2>{ member.name }</h2>
             <table>
                 <thead>
                     <tr>
@@ -14,8 +15,8 @@ function Member(props) {
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Developer</td>
-                        <td>example@example.com</td>
+                        <td>{ member.role }</td>
+                        <td>{ member.email }</td>
                         <td className="controls">
                             <a href="#">Edit</a>
                             <a href="#">Delete</a>
